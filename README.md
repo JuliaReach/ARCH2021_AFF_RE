@@ -1,15 +1,41 @@
 # ARCH2021 AFF
 
-This is the repeatability evaluation (RE) package for the
-ARCH-COMP21 Category Report: Continuous and Hybrid Systems with Linear Dynamics
-of the 5th International
-Competition on Verifying Continuous and Hybrid Systems Friendly Competition
-(ARCH-COMP '21).
+This is the JuliaReach repeatability evaluation (RE) package for the ARCH-COMP
+2021 category report: Continuous and Hybrid Systems with Linear Continuous
+Dynamics of the 5th International Competition on Verifying Continuous and Hybrid
+Systems (ARCH-COMP '21).
+
+To cite the work, you can use:
+
+```
+@inproceedings{AlthoffAFFFSSW21,
+  author    = {Matthias Althoff and
+               Erika {\'{A}}brah{\'{a}}m and
+               Marcelo Forets and
+               Goran Frehse and
+               Daniel Freire and
+               Christian Schilling and
+               Stefan Schupp and
+               Mark Wetzlinger},
+  editor    = {Goran Frehse and
+               Matthias Althoff},
+  title     = {{ARCH-COMP21} Category Report: Continuous and Hybrid Systems with
+               Linear Continuous Dynamics},
+  booktitle = {{ARCH}},
+  series    = {EPiC Series in Computing},
+  volume    = {80},
+  pages     = {1--31},
+  publisher = {EasyChair},
+  year      = {2021},
+  url       = {https://doi.org/10.29007/lhbw},
+  doi       = {10.29007/lhbw}
+}
+```
+
+## Installation
 
 *Note:* Running the full benchmark suite should take no more than one hour with
 a reasonable internet connection (may take longer otherwise).
-
-## Installation
 
 There are two ways to install and run this RE: either using the Julia script,
 or using the included Dockerfile. In both cases, first clone this repository:
@@ -26,7 +52,7 @@ you have installed Julia installed in your system, do
 ```shell
 $ julia startup.jl
 ```
-to run all the benchmarks. Afer this command has finished, the results will be stored
+to run all the benchmarks. After this command has finished, the results will be stored
 under the folder `result/results.csv` and the generated plots in your working directory.
 
 **Using the Docker container.** To build the container, you need the program `docker`.
